@@ -68,7 +68,7 @@ public abstract class Empregado {
             case "sindicalizado":
                 return this.getSindicalizado().toString();
             default:
-                throw new RuntimeException("Tipo invalido.");
+                throw new TipoInvalidoException();
         }
     }
 
